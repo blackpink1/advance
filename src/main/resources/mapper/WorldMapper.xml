@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于绑定Dao接口 -->
+<mapper namespace="com.hmy.advance.mapper.WorldMapper">
+
+    <!-- 查询名字记录sql -->
+    <select id="getAll" resultType="java.util.Map">
+        select * from actor where id = #{id}
+    </select>
+
+</mapper>
